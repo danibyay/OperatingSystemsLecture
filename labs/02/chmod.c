@@ -9,9 +9,9 @@ int main (){
 
     int rc;
 
-    rc = chmod("file.txt", 0777);
+    rc = chmod("password", 0531);  // r-x -wx --x
 
-    if (rc == -1){
+    if (rc == -1){ //catch the error
         fprintf(stderr, "chmod failed, errno = %d\n", errno);
     }
 }
